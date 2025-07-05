@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RAG Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 RAG Chatbot with URL Scraping</h1>
+
+        <form method="POST">
+            <label for="url">Enter a URL:</label><br>
+            <input type="text" id="url" name="url" placeholder="https://example.com" required><br><br>
+
+            <label for="question">Ask a Question:</label><br>
+            <input type="text" id="question" name="question" placeholder="What is this page about?" required><br><br>
+
+            <button type="submit">Get Answer</button>
+        </form>
+
+        {% if answer %}
+            <div class="answer-box">
+                <h2>Answer:</h2>
+                <p>{{ answer }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+flask
+requests
+beautifulsoup4
+faiss-cpu
+transformers
+sentence-transformers
+torch
