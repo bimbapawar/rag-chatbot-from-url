@@ -19,6 +19,6 @@ A beginner-friendly chatbot using Retrieval-Augmented Generation (RAG) powered b
 ## Setup
 
 ```bash
-git clone https://github.com/yourusername/rag-chatbot-from-url.git
+git clone https://github.com/bimbapawar/rag-chatbot-from-url.git
 cd rag-chatbot-from-url
 pip install -r requirements.txt
